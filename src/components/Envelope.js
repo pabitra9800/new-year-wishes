@@ -10,7 +10,7 @@ const Envelope = () => {
   };
 
   const playMusic = () => {
-    const audio = new Audio("/assets/music1.mp3");
+    const audio = new Audio(`${process.env.PUBLIC_URL}/assets/music1.mp3`);
     audio.loop = true;
     audio.play();
   };
